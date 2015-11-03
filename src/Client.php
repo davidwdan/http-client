@@ -20,7 +20,7 @@ class Client
         $requestData = new RequestData($method, $url, $headers, $protocolVersion);
         $connector = $this->getConnectorForScheme($requestData->getScheme());
 
-        return new Request($connector, $requestData);
+        return new RequestObservable(new Request($connector, $requestData));
     }
 
     private function getConnectorForScheme($scheme)

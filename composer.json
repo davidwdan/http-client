@@ -11,7 +11,8 @@
         "react/event-loop": "0.4.*",
         "react/stream": "0.4.*",
         "react/promise": "~2.2",
-        "evenement/evenement": "~2.0"
+        "evenement/evenement": "~2.0",
+        "asm89/rx.php": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -22,5 +23,11 @@
         "branch-alias": {
             "dev-master": "0.5-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:davidwdan/Rx.PHP.git"
+        }
+    ]
 }
